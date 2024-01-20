@@ -21,7 +21,7 @@ Class Traffic {
     }
   }
 
-  update(mapWidth, ballX, ballY, ballRadius, rl) {
+  update(mapWidth, ballX, ballY, ballRadius) {
     collides := False
     For vehicle In This.vehicles {
       vehicle.move(mapWidth)

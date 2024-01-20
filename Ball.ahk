@@ -102,16 +102,16 @@ Class Ball {
     This.y := currentMap.ballSpawnY
   }
 
-  updateSpecial(rl, currentMap) {
+  updateSpecial(currentMap) {
     collidesCar := False
     logCol := 0
     For tr in currentMap.traffic {
-      If tr.update(currentMap.width*64, This.x, This.y, This.radius, rl) {
+      If tr.update(currentMap.width*64, This.x, This.y, This.radius) {
         This.resetPosition(currentMap)
       }
     }
     For l in currentMap.logs {
-      collides := l.update(currentMap.width*64, This.x, This.y, This.radius, rl)
+      collides := l.update(currentMap.width*64, This.x, This.y, This.radius)
       If collides != 0 {
         logCol := collides
       }
@@ -124,7 +124,7 @@ Class Ball {
   }
 
   update(currentMap) {
-    This.updateSpecial(rl, currentMap)
+    This.updateSpecial(currentMap)
     If This.levelDone {
       Return
     }

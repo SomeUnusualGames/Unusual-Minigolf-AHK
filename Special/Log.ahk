@@ -18,7 +18,7 @@ Class Logs {
     }
   }
   
-  update(mapWidth, ballX, ballY, ballRadius, rl) {
+  update(mapWidth, ballX, ballY, ballRadius) {
     collides := 0
     For i, l In This.logsList {
       l.move(mapWidth)
