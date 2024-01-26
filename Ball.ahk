@@ -116,11 +116,7 @@ Class Ball {
         logCol := collides
       }
     }
-    If logCol != 0 {
-      This.offsetX := logCol.direction * logCol.speed
-    } Else {
-      This.offsetX := 0.0
-    }
+    This.offsetX := (logCol != 0) ? logCol.direction * logCol.speed : 0.0
   }
 
   update(currentMap) {

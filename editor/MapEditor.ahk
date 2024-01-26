@@ -137,7 +137,7 @@ Class Grid {
 
 Class MapEditor {
   __New(width, height) {
-    This.rl := Raylib("../raylib.dll")
+    This.rl := Raylib("../dll/raylib.dll")
     This.rl.InitWindow(width, height, "Unusual MiniGolf Map Maker")
     This.rl.SetTargetFPS(60)
     This.grid := Grid(This.rl, width/64 + 1, height/64 + 1, "../assets/graphics/tiles2.png")

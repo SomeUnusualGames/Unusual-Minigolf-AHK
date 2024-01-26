@@ -309,8 +309,6 @@ And many more features.
 
 So yeah, AutoHotkey is a powerful scripting language capable of more than just creating macros and hotkeys. It helps a lot that AutoHotkey has a simple syntax very close to Python's syntax, so people who don't have much experience programming have an easier time learning this language, and they could easily transfer that knowledge to Python if they wanted to.
 
-
-
 The game:
 - How to detect when the ball touches a wall
 - How to calculate the ball new angle when boucing
