@@ -11,9 +11,6 @@ rl.SetTargetFPS(60)
 g := Game()
 
 While (!rl.WindowShouldClose() And !g.menu.exitGame) {
-  If rl.IsKeyPressed(65) {
-    Pause
-  }
   g.update()
   rl.BeginDrawing()
   rl.ClearBackground(Color(0, 0, 0))
